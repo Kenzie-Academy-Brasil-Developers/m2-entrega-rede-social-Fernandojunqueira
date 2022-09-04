@@ -1,16 +1,16 @@
 header{
     height: 74px;
+    position: sticky;
+    top: 0;
 }
-section{
-    height: 100vh;
-}
+
 form{
     gap: var(--gap-5);
-    width: 80vw;
+    width: 90vw;
     padding: 40px 20px;
-    height: 385px;
     border-radius: var(--border-radius-1);
 }
+
 form > p{
     text-align: center;
 }

@@ -24,18 +24,32 @@
     <header class="flex between bg-color-primary pl-2 pr-2 align-itens button-default">
         <img src="./src/assets/TechPosters.png" alt="Logo TechPosters">
         <div class="buttons flex">
-            <button class=" buttonMobile button-grey-1 font-text-2 button-medium flex align-itens">Login</button>
-            <button class="buttonMobile color-tertiary font-text-2 button-medium flex align-itens">Registro</button>
+            <button class="buttonMobile color-tertiary font-text-2 button-medium flex align-itens" id="btnLogin">Login</button>
+            <button class="buttonMobile color-tertiary font-text-2 button-medium flex align-itens" id="btnRegister">Registro</button>
         </div>
     </header> 
     <section class="bg-color flex center ">
-        <form class="flex column bg-color-white mt-1 mb-6 "> 
+        <form class="flex column bg-color-white mt-1 mb-6 login"> 
             <h2 class="font-title-1">Login</h2>
-            <input type="text" placeholder="Seu e-mail" required class="input-default">
+            <input type="text" placeholder="Seu e-mail"  class="input-default">
             <input type="text" placeholder="Sua senha" class="input-default">
             <button class="button button-primary">Logar</button>
             <p class="font-text-4">Ainda não possui cadastro</p>
-            <button class="button button-outline-medium">Ir para página de registro</button>
+            <button class="button button-outline-medium pgRegister">Ir para página de registro</button>
+        </form>
+        <form class="flex column bg-color-white mt-1 mb-6 register hidden "> 
+            <div class="flex between">
+                <h2 class="font-title-1">Cadastro</h2>
+                <button class="buttonMobile button-outline-medium">Voltar</button>
+            </div>
+            <input type="text" placeholder="Seu nome" class="input-default">
+            <input type="text" placeholder="Seu e-mail" class="input-default">
+            <input type="text" placeholder="Sua senha" class="input-default">
+            <input type="text" placeholder="Qual o seu trabalho?" class="input-default">
+            <input type="text" placeholder="URL da imagem de perfil" class="input-default">
+            <button class="button button-primary">Registrar</button>
+            <p class="font-text-4">Já possui login?</p>
+            <button class="button button-outline-medium pgLogin">Ir para página de login</button>
         </form>
     </section>
     <div class="modal-wrapper flex column align-itens hidden">
@@ -45,6 +59,6 @@
             <button class=" button button-white-fixed mt-6">Entendi</button>
         </div>
     </div>
-   
+   <script type="module" src="./src/scripts/index.js"></script>
 </body>
 </html>
