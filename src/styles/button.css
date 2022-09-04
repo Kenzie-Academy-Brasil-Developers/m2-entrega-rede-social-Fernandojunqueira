@@ -58,3 +58,7 @@
 .button-medium{
     height: var(--button-height-2);
 }
+.button-medium:hover{
+    background-color: var(--color-grey-2);
+    color: var(--color-white); 
+}
