@@ -1,0 +1,52 @@
+.button-primary{
+    background-color: var(--color-brand-1);
+    color: var(--color-white);   
+}
+
+.button-grey-1{
+    background-color: var(--color-grey-1);
+    color: var(--color-white);  
+}
+.button-grey-1:hover{
+    background-color: var(--color-grey-0);
+}
+
+.button-white-fixed{ 
+    background-color: var(--color-white);
+    color: var(--color-grey-1);   
+}
+.button-white-fixed:hover{
+    background-color: var(--color-grey-5);
+}
+.button-outline-medium{
+    height: var(--button-height-2);
+    background-color: var(--color-white);
+    color: var(--color-grey-1);  
+    border: 1px solid var(--color-grey-1);
+    
+}
+.button-outline-medium:hover{
+    border: 1px solid var(--color-brand-1);
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+}
+.button-disable{ 
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-3); 
+}
+
+.button{
+    height: var(--button-height-1);
+    width: max-content;
+    padding: var(--padding);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-2);
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+}
+.button-default{
+    border: transparent;
+}
+.button-medium{
+    height: var(--button-height-2);
+}
