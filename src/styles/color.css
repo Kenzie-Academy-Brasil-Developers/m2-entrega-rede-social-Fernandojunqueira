@@ -22,6 +22,12 @@
 .bg-color-secundary{
     background-color: var(--color-grey-2);
 }
+.bg-color{
+    background-color: var(--color-grey-5);
+}
+.bg-color-white{
+    background-color: white;
+}
 .bg-color-brand-1{
     background-color: var(--color-brand-1);
 }

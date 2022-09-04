@@ -1,0 +1,32 @@
+.modal-wrapper{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal{
+    background-color: var(--color-brand-1);
+    width: 80vw;
+    margin-top: 110px;
+    padding: 32px 20px;
+    position: absolute;
+    height: 175px;
+    border-radius: var(--border-radius-1);
+}
+.modal > button{
+    position: absolute;
+    right: 15px;
+}
+@media(width > 425px){
+    .modal{
+        width: 385px;
+    }
+}
+@media(width > 768px){
+    .modal{
+        bottom: 44px;
+        right: 22px;
+    }
+}

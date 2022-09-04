@@ -4,7 +4,7 @@
 }
 
 .button-grey-1{
-    background-color: var(--color-grey-1);
+    background-color: var(--color-grey-2);
     color: var(--color-white);  
 }
 .button-grey-1:hover{
@@ -14,6 +14,7 @@
 .button-white-fixed{ 
     background-color: var(--color-white);
     color: var(--color-grey-1);   
+    padding: 8px;
 }
 .button-white-fixed:hover{
     background-color: var(--color-grey-5);
@@ -37,10 +38,17 @@
 
 .button{
     height: var(--button-height-1);
-    width: max-content;
-    padding: var(--padding);
+    /* width: max-content; */
+    /* padding: var(--padding-1); */
     font-weight: var(--font-weight-2);
     font-size: var(--font-text-2);
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+}
+.buttonMobile{
+    height: var(--button-height-1);
+    width: max-content;
+    padding: 8px;
     border-radius: var(--border-radius-2);
     cursor: pointer;
 }
