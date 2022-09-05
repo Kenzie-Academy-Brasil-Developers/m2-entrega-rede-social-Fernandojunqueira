@@ -34,7 +34,7 @@ export class ApiRequests {
             localStorage.setItem("@kenzieRedeSocial:token", JSON.stringify(res.token));
             if(typeof JSON.stringify(res.user_uuid) == 'string'){
             
-                console.log('oi')
+                window.location.assign('src/pages/dashboard.html')
             }else{
                 const modal = document.querySelector('.modal-wrapper')
 
