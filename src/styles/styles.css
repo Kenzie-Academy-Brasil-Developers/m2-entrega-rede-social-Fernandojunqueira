@@ -1,0 +1,31 @@
+header{
+    height: 74px;
+    position: sticky;
+    top: 0;
+}
+
+form{
+    gap: var(--gap-5);
+    width: 90vw;
+    padding: 40px 20px;
+    border-radius: var(--border-radius-1);
+}
+
+form > p{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+
+@media(width > 425px){
+    form{
+        width: 340px;
+    }
+   
+}
+@media( width > 768px){
+    .mt-1{
+        margin-top: 110px
+    }
+}
