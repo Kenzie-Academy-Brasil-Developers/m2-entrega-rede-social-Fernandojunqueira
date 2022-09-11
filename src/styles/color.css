@@ -4,9 +4,12 @@
 .color-secondary{
     color: var(--color-grey-2);
 }
+.color-grey-3{
+    color: var(--color-grey-3);
+}
 .color-tertiary{
     color: var(--color-grey-4);
-}
+}   
 .color-black{
     color: var(--color-Black);
 }
@@ -22,8 +25,14 @@
 .bg-color-secundary{
     background-color: var(--color-grey-2);
 }
+.bg-color-tertiary{
+    background-color: var(--color-grey-4);
+}
 .bg-color{
     background-color: var(--color-grey-5);
+}
+.bg-color-grey-0{
+    background-color: var(--color-grey-0);
 }
 .bg-color-white{
     background-color: white;
