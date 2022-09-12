@@ -1,4 +1,5 @@
 import { ApiRequests } from "./models/api.js"
+import { Dashboard } from "./dashboard.js"
 
 //Botões de navegação e suas funcionalidades
 const btnLogin = document.getElementById('btnLogin')
@@ -6,7 +7,6 @@ const btnRegister = document.getElementById('btnRegister')
 const btnVoltar = document.querySelector('.register div > button')
 const btnEntendi = document.querySelector('.modal > button')
 const btnIrpagLogin = document.querySelector('.pgLogin')
-console.log(btnIrpagLogin)
 const btnIrpagRegister = document.querySelector('.pgRegister')
 
 btnLogin.addEventListener('click', () => {
@@ -47,6 +47,9 @@ btnIrpagLogin.addEventListener('click', (event) => {
     formLogin.classList.toggle('hidden')
     formRegister.classList.toggle('hidden')
 })
+
+//Dashboard buttons
+
 
 //Buscando o body do register
 class Buttons {
@@ -104,3 +107,4 @@ class Buttons {
 }
 Buttons.registerBtn()
 Buttons.loginBtn()
+Dashboard.consoles()

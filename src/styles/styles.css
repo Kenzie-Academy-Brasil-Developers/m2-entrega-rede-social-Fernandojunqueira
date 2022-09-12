@@ -34,6 +34,11 @@ ul{
 li{ 
    min-width: 200px;
 }
+.profile-picture{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
 
 
 @media(width > 425px){

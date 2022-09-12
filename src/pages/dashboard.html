@@ -49,8 +49,20 @@
     <section class="suggestions">
         <div class="container">
             <h2>Sugestões para você seguir</h2>
-            <ul class="flex pb-2">
+            <ul class="flex pb-2 suggestions__follow--list">
                 <li>
+                    <div class="flex mt-1 gap-6">
+                        <figure>
+                            <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                        </figure>
+                        <main class="flex align-itens column gap-7">
+                            <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                            <p class="font-text-4 color-primary">UX e UI Designer</p>
+                        </main>
+                    </div>
+                    <button class="button-white-fixed suggestions__follow">Seguindo</button>
+                </li>
+                <!-- <li>
                     <div class="flex mt-1 gap-6">
                         <figure>
                             <img src="../assets/Ellipse 1.png" alt="Foto perfil">
@@ -85,27 +97,16 @@
                         </main>
                     </div>
                     <button class="button-white-fixed suggestions__follow">Seguindo</button>
-                </li>
-                <li>
-                    <div class="flex mt-1 gap-6">
-                        <figure>
-                            <img src="../assets/Ellipse 1.png" alt="Foto perfil">
-                        </figure>
-                        <main class="flex align-itens column gap-7">
-                            <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
-                            <p class="font-text-4 color-primary">UX e UI Designer</p>
-                        </main>
-                    </div>
-                    <button class="button-white-fixed suggestions__follow">Seguindo</button>
-                </li>
+                </li> -->
 
             </ul>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <h2 class="mt-1">Posts</h2>
-            <article>
+    <section >
+        <h2 class="mt-1 container">Posts</h2>
+        <div class="container all-posts">
+            
+            <!-- <article>
                 <div class="flex mt-1 gap-6">
                     <figure>
                         <img src="../assets/Ellipse 1.png" alt="Foto perfil">
@@ -230,10 +231,10 @@
                     <img src="../assets/heartBlack.png" alt="">
                     <span class="ml-7">25</span>
                 </div>
-            </article>
+            </article> -->
         </div>
     </section>
-    <div class="modal-wrapper-article">
+    <div class="modal-wrapper-article hidden">
         <div class="modal-article">
 
             <article>
@@ -255,6 +256,6 @@
                    </div>
                 </div>
           </article>
-            
+         <script type="module" src="../scripts/dashboard.js"></script>   
 </body>
 </html>
