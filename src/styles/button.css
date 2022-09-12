@@ -38,12 +38,11 @@
 
 .button{
     height: var(--button-height-1);
-    /* width: max-content; */
-    /* padding: var(--padding-1); */
     font-weight: var(--font-weight-2);
     font-size: var(--font-text-2);
     border-radius: var(--border-radius-2);
     cursor: pointer;
+    
 }
 .buttonMobile{
     height: var(--button-height-1);
@@ -61,4 +60,29 @@
 .button-medium:hover{
     background-color: var(--color-grey-2);
     color: var(--color-white); 
+}
+.postar{
+    width: 69px;
+    position: absolute;
+    bottom: -57px;
+    right: 0;
+}
+.suggestions__follow{
+    border: 1px solid var(--color-grey-0);
+}
+.btnClose__modal{
+    object-fit: contain;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+@media(width < 768px){
+
+    .button-white-fixed{
+        height: var(--button-height-2);
+        font-size: var(--gap-6);
+    }
+    .button{
+        padding: 8px;
+    }
 }

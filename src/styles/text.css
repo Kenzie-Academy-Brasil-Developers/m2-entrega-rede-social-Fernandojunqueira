@@ -26,6 +26,17 @@
     font-size: var(--font-text-3);
     font-weight: var(--font-weight-3);
 }
+.font-text-1-mobile{
+    font-size: var(--font-title-2);
+    font-weight: var(--font-weight-2);
+    
+}
+.line-height{
+    line-height: 40px;
+}
+.line-height-1{
+    line-height: 28px;
+}
 a{
     text-decoration: none;
     color: var(--font-text-2)

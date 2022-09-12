@@ -26,131 +26,236 @@
         <button class="buttonMobile color-tertiary font-text-2 button-medium flex align-itens" id="btnSair">Sair</button>    
     </header> 
     <section>
-        <div>
-            <figure>
-                <img src="../assets/Ellipse 1.png" alt="Foto Perfil">
-            </figure>
-            <main>
-                <div>
-                    <h2>Samuel Leão</h2>
-                    <p>556 seguidores</p>
-                </div>
-                <p>Front end Engineer</p>
-            </main>
+        <div class="container">
+            <div class="flex mt-1 mb-2 gap-6 ">
+                <figure>
+                    <img src="../assets/Ellipse 1.png" alt="Foto Perfil">
+                </figure>
+                <main >
+                    <div class="flex align-itens">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Samuel Leão</h2>
+                        <p class="font-text-4 color-primary">556 seguidores</p>
+                    </div>
+                    <p class="font-text-2 color-secondary mt-7">Front end Engineer</p>
+                </main>
+            </div>
+            <form class="flex column gap-4 postForm">
+                <input type="text" placeholder="Digitar título do post" class="input-default">
+                <textarea placeholder="Digitar descrição do post" class="input-default-textArea"></textarea>
+                <button class="button bg-color-tertiary color-grey-3 postar">Postar</button>
+            </form>
         </div>
-        <form >
-            <input type="text" placeholder="Digitar título do post" class="input-default">
-            <textarea placeholder="Digitar descrição do post" class="input-default-textArea"></textarea>
-            <button>Postar</button>
-        </form>
+    </section>     
+    <section class="suggestions">
+        <div class="container">
+            <h2>Sugestões para você seguir</h2>
+            <ul class="flex pb-2 suggestions__follow--list">
+                <li>
+                    <div class="flex mt-1 gap-6">
+                        <figure>
+                            <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                        </figure>
+                        <main class="flex align-itens column gap-7">
+                            <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                            <p class="font-text-4 color-primary">UX e UI Designer</p>
+                        </main>
+                    </div>
+                    <button class="button-white-fixed suggestions__follow">Seguindo</button>
+                </li>
+                <!-- <li>
+                    <div class="flex mt-1 gap-6">
+                        <figure>
+                            <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                        </figure>
+                        <main class="flex align-itens column gap-7">
+                            <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                            <p class="font-text-4 color-primary">UX e UI Designer</p>
+                        </main>
+                    </div>
+                    <button class="button-white-fixed suggestions__follow">Seguindo</button>
+                </li>
+                <li>
+                    <div class="flex mt-1 gap-6">
+                        <figure>
+                            <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                        </figure>
+                        <main class="flex align-itens column gap-7">
+                            <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                            <p class="font-text-4 color-primary">UX e UI Designer</p>
+                        </main>
+                    </div>
+                    <button class="button-white-fixed suggestions__follow">Seguindo</button>
+                </li>
+                <li>
+                    <div class="flex mt-1 gap-6">
+                        <figure>
+                            <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                        </figure>
+                        <main class="flex align-itens column gap-7">
+                            <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                            <p class="font-text-4 color-primary">UX e UI Designer</p>
+                        </main>
+                    </div>
+                    <button class="button-white-fixed suggestions__follow">Seguindo</button>
+                </li> -->
+
+            </ul>
+        </div>
     </section>
-    <section>
-        <h2>Sugestões para você seguir</h2>
-        <ul>
-            <li>
-                <div>
+    <section >
+        <h2 class="mt-1 container">Posts</h2>
+        <div class="container all-posts">
+            
+            <!-- <article>
+                <div class="flex mt-1 gap-6">
                     <figure>
                         <img src="../assets/Ellipse 1.png" alt="Foto perfil">
                     </figure>
-                    <main>
-                        <h2>Carlos Lima </h2>
-                        <p>UX e UI Designer</p>
+                    <main class="flex align-itens column gap-7">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                        <p class="font-text-4 color-primary">UX e UI Designer</p>
                     </main>
                 </div>
-                <button>Seguindo</button>
-            </li>
-            <li>
-                <div>
+                <h2 class="font-title-1 line-height mt-3">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+                <p class="mt-5 line-height-1 font-text-1 mb-3">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                <div class="flex align-itens">
+                    <button class="button color-white  bg-color-grey-0 font-text-3 mr-3">Abrir Post</button>
+                    <img src="../assets/heartBlack.png" alt="">
+                    <span class="ml-7">25</span>
+                </div>
+            </article>
+            <article>
+                <div class="flex mt-1 gap-6">
                     <figure>
                         <img src="../assets/Ellipse 1.png" alt="Foto perfil">
                     </figure>
-                    <main>
-                        <h2>Carlos Lima </h2>
-                        <p>UX e UI Designer</p>
+                    <main class="flex align-itens column gap-7">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                        <p class="font-text-4 color-primary">UX e UI Designer</p>
                     </main>
                 </div>
-                <button>Seguindo</button>
-            </li>
-            <li>
-                <div>
+                <h2 class="font-title-1 line-height mt-3">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+                <p class="mt-5 line-height-1 font-text-1 mb-3">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                <div class="flex align-itens">
+                    <button class="button color-white  bg-color-grey-0 font-text-3 mr-3">Abrir Post</button>
+                    <img src="../assets/heartBlack.png" alt="">
+                    <span class="ml-7">25</span>
+                </div>
+            </article>
+            <article>
+                <div class="flex mt-1 gap-6">
                     <figure>
                         <img src="../assets/Ellipse 1.png" alt="Foto perfil">
                     </figure>
-                    <main>
-                        <h2>Carlos Lima </h2>
-                        <p>UX e UI Designer</p>
+                    <main class="flex align-itens column gap-7">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                        <p class="font-text-4 color-primary">UX e UI Designer</p>
                     </main>
                 </div>
-                <button>Seguindo</button>
-            </li>
-        </ul>
+                <h2 class="font-title-1 line-height mt-3">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+                <p class="mt-5 line-height-1 font-text-1 mb-3">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                <div class="flex align-itens">
+                    <button class="button color-white  bg-color-grey-0 font-text-3 mr-3">Abrir Post</button>
+                    <img src="../assets/heartBlack.png" alt="">
+                    <span class="ml-7">25</span>
+                </div>
+            </article>
+            <article>
+                <div class="flex mt-1 gap-6">
+                    <figure>
+                        <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                    </figure>
+                    <main class="flex align-itens column gap-7">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                        <p class="font-text-4 color-primary">UX e UI Designer</p>
+                    </main>
+                </div>
+                <h2 class="font-title-1 line-height mt-3">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+                <p class="mt-5 line-height-1 font-text-1 mb-3">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                <div class="flex align-itens">
+                    <button class="button color-white  bg-color-grey-0 font-text-3 mr-3">Abrir Post</button>
+                    <img src="../assets/heartBlack.png" alt="">
+                    <span class="ml-7">25</span>
+                </div>
+            </article>
+            <article>
+                <div class="flex mt-1 gap-6">
+                    <figure>
+                        <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                    </figure>
+                    <main class="flex align-itens column gap-7">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                        <p class="font-text-4 color-primary">UX e UI Designer</p>
+                    </main>
+                </div>
+                <h2 class="font-title-1 line-height mt-3">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+                <p class="mt-5 line-height-1 font-text-1 mb-3">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                <div class="flex align-itens">
+                    <button class="button color-white  bg-color-grey-0 font-text-3 mr-3">Abrir Post</button>
+                    <img src="../assets/heartBlack.png" alt="">
+                    <span class="ml-7">25</span>
+                </div>
+            </article>
+            <article>
+                <div class="flex mt-1 gap-6">
+                    <figure>
+                        <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                    </figure>
+                    <main class="flex align-itens column gap-7">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                        <p class="font-text-4 color-primary">UX e UI Designer</p>
+                    </main>
+                </div>
+                <h2 class="font-title-1 line-height mt-3">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+                <p class="mt-5 line-height-1 font-text-1 mb-3">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                <div class="flex align-itens">
+                    <button class="button color-white  bg-color-grey-0 font-text-3 mr-3">Abrir Post</button>
+                    <img src="../assets/heartBlack.png" alt="">
+                    <span class="ml-7">25</span>
+                </div>
+            </article>
+            <article>
+                <div class="flex mt-1 gap-6">
+                    <figure>
+                        <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                    </figure>
+                    <main class="flex align-itens column gap-7">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                        <p class="font-text-4 color-primary">UX e UI Designer</p>
+                    </main>
+                </div>
+                <h2 class="font-title-1 line-height mt-3">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+                <p class="mt-5 line-height-1 font-text-1 mb-3">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                <div class="flex align-itens">
+                    <button class="button color-white  bg-color-grey-0 font-text-3 mr-3">Abrir Post</button>
+                    <img src="../assets/heartBlack.png" alt="">
+                    <span class="ml-7">25</span>
+                </div>
+            </article> -->
+        </div>
     </section>
-    <section>
-        <h2>Posts</h2>
-        <article>
-            <div>
-                <figure>
-                    <img src="../assets/Ellipse 1.png" alt="Foto perfil">
-                </figure>
-                <main>
-                    <h2>Carlos Lima </h2>
-                    <p>UX e UI Designer</p>
-                </main>
-            </div>
-            <h2>Como criar um interface simples e agradável utilizando boas práticas de design</h2>
-            <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
-            <button>Abrir Post</button>
-            <img src="../assets/heartBlack.png" alt="">
-            <span>25</span>
-        </article>
-        <article>
-            <div>
-                <figure>
-                    <img src="../assets/Ellipse 1.png" alt="Foto perfil">
-                </figure>
-                <main>
-                    <h2>Carlos Lima </h2>
-                    <p>UX e UI Designer</p>
-                </main>
-            </div>
-            <h2>Como criar um interface simples e agradável utilizando boas práticas de design</h2>
-            <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
-            <button>Abrir Post</button>
-            <img src="../assets/heartBlack.png" alt="">
-            <span>25</span>
-        </article>
-        <article>
-            <div>
-                <figure>
-                    <img src="../assets/Ellipse 1.png" alt="Foto perfil">
-                </figure>
-                <main>
-                    <h2>Carlos Lima </h2>
-                    <p>UX e UI Designer</p>
-                </main>
-            </div>
-            <h2>Como criar um interface simples e agradável utilizando boas práticas de design</h2>
-            <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
-            <button>Abrir Post</button>
-            <img src="../assets/heartBlack.png" alt="">
-            <span>25</span>
-        </article>
-        <article>
-            <div>
-                <figure>
-                    <img src="../assets/Ellipse 1.png" alt="Foto perfil">
-                </figure>
-                <main>
-                    <h2>Carlos Lima </h2>
-                    <p>UX e UI Designer</p>
-                </main>
-            </div>
-            <h2>Como criar um interface simples e agradável utilizando boas práticas de design</h2>
-            <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
-            <button>Abrir Post</button>
-            <img src="../assets/heartBlack.png" alt="">
-            <span>25</span>
-        </article>
-    </section>
+    <div class="modal-wrapper-article hidden">
+        <div class="modal-article">
+
+            <article>
+                
+
+                <div class="flex mt-1 gap-6">
+                    <figure>
+                        <img src="../assets/Ellipse 1.png" alt="Foto perfil">
+                    </figure>
+                    <main class="flex align-itens column gap-7">
+                        <h2 class="font-text-1-mobile color-primary mr-8">Carlos Lima </h2>
+                        <p class="font-text-4 color-primary">UX e UI Designer</p>
+                    </main>
+                    <img src="../assets/Frame 13.png" alt="close button" class="btnClose__modal">
+                    </div>
+                        <h2 class="font-title-1 line-height mt-3">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+                        <p class="mt-5 line-height-1 font-text-1 mb-3">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                        <p class="mt-5 line-height-1 font-text-1 mb-3">Antes de iniciar a criação de qualquer projeto, busque referências de aplicações que tenham a ver com o nicho que você está desenvolvendo. Por exemplo, quando quero criar um e-commerce de roupas, vou reservar um momento para buscar por aplicações do gênero, tanto acessando ou baixando apps e vendo o que se repete de informações em cada um dos aplicativos e sites referentes a compra de roupas, e também, observar cores que normalmente vocêenxerga em cada um dos apps.</p>
+                   </div>
+                </div>
+          </article>
+         <script type="module" src="../scripts/dashboard.js"></script>   
 </body>
 </html>

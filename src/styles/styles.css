@@ -4,22 +4,45 @@ header{
     top: 0;
 }
 
-form{
+.lg-rg{
     gap: var(--gap-5);
     width: 90vw;
     padding: 40px 20px;
     border-radius: var(--border-radius-1);
 }
 
-form > p{
+.lg-rg > p{
     text-align: center;
 }
 .hidden{
     display: none;
 }
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+.postForm{
+    position: relative;
+}
+.suggestions{
+    margin-top: 100px;
+}
+
+ul{
+    overflow-x: auto;
+}
+li{ 
+   min-width: 200px;
+}
+.profile-picture{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
 
 @media(width > 425px){
-    form{
+    .lg-rg{
         width: 340px;
     }
    
